@@ -8,11 +8,26 @@
 
 #root img {
   height: 48px;
+  margin-left: 63px;
 }
 
-#root img > title {
+#root title {
   height: 37px;
 }
-#root text {
-  justify-content: flex-start;
+
+div button {
+  height: 100px;
+  width: 100px;
+  margin-left: 15px;
+  margin-top: 400px;
+
+  background-color: blueviolet;
+}
+
+div button :first-child {
+  margin-right: 20px;
+}
+
+div button :nth-child(3) {
+  margin-top: 450px;
 }

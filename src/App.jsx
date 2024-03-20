@@ -1,6 +1,7 @@
 import { useState } from "react";
 import image from "./img/calculator.png";
 import title from "./img/title.png";
+import Compteur from "./img/Compteur.png";
 import "./App.css";
 
 function App() {
@@ -10,11 +11,16 @@ function App() {
     <>
       <img src={image} />
       <img src={title} />
-      <button onClick={() => setCounter(counter + 1)}></button>
 
-      <button onClick={() => setCounter(counter - 1)}></button>
+      <div>
+        <button onClick={() => setCounter(counter - 1)}> - </button>
 
-      <button onClick={() => setCounter(counter === 0)}></button>
+        <button onClick={() => setCounter(counter + 1)}> + </button>
+
+        <button onClick={() => setCounter(0)}> Reset </button>
+      </div>
+
+      <div>{counter}</div>
     </>
   );
 }
